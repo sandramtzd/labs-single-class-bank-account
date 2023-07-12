@@ -12,7 +12,7 @@ public class BankAccountTest {
     @BeforeEach
 
     public void setUp() {
-        bankAccount = new BankAccount("Sandra", "Martinez", "1995-07-09" ,0, 0);
+        bankAccount = new BankAccount("Sandra", "Martinez", "1995-07-09" ,1240, 5000);
 
     }
 
@@ -59,6 +59,36 @@ public class BankAccountTest {
         bankAccount.setDateOfBirth("1995-07-09");
         assertThat(bankAccount.getDateOfBirth()).isEqualTo("1995-07-09");
     }
+
+    @Test
+    public void canGetAccountNumber(){
+        int result = bankAccount.getAccountNumber();
+        int expected = 1240;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void canSetAccountNumber(){
+        bankAccount.setAccountNumber(1240);
+        assertThat(bankAccount.getAccountNumber()).isEqualTo(1240);
+    }
+
+    @Test
+    public void canGetBalance(){
+        int result = bankAccount.getBalance();
+        int expected = 5000;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void canSetBalance(){
+        bankAccount.setBalance(5000);
+        assertThat(bankAccount.getAccountNumber()).isEqualTo(5000);
+    }
+
+
+
+
 
 
 

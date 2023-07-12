@@ -7,7 +7,7 @@ public class BankAccount {
     private String firstName;
     private String lastName;
     private String dateOfBirth;
-    private int accountNumber = 0;
+    private int accountNumber=0;
 
     private int balance = 0;
 
@@ -25,8 +25,8 @@ public class BankAccount {
     }
 
 
-    public void setFirstName(String name) {
-        this.firstName = name;
+    public void setFirstName(String newFirstName) {
+        this.firstName = newFirstName;
 
     }
 
@@ -35,15 +35,32 @@ public class BankAccount {
     }
 
 
-    public void setLastName(String lastname) {
-        this.lastName = lastname;
+    public void setLastName(String newLastName) {
+        this.lastName = newLastName;
     }
 
     public String getDateOfBirth() {
         return this.dateOfBirth;
     }
 
-    public void setDateOfBirth(String dateofbirth) {
-        this.dateOfBirth = dateofbirth;
+    public void setDateOfBirth(String newDateOfBirth) {
+        this.dateOfBirth = newDateOfBirth;
+    }
+
+    public int getAccountNumber() {
+        return this.accountNumber;
+    }
+
+    public void setAccountNumber(int newAccountNumber) {
+        this.accountNumber = newAccountNumber;
+    }
+
+    public int getBalance() {
+        return this.balance;
+    }
+
+
+    public void setBalance(int newBalance) {
+        this.balance = newBalance;
     }
 }
