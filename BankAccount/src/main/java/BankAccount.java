@@ -63,4 +63,11 @@ public class BankAccount {
     public void setBalance(int newBalance) {
         this.balance = newBalance;
     }
+
+    public void deposit(int newDeposit) {
+        this.balance += newDeposit;
+
+    }
+
+    
 }

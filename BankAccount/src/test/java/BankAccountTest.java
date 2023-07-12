@@ -83,8 +83,17 @@ public class BankAccountTest {
     @Test
     public void canSetBalance(){
         bankAccount.setBalance(5000);
-        assertThat(bankAccount.getAccountNumber()).isEqualTo(5000);
+        assertThat(bankAccount.getBalance()).isEqualTo(5000);
     }
+
+    @Test
+    public void canUpdateBalance(){
+        bankAccount.deposit(500);
+        assertThat(bankAccount.getBalance()).isEqualTo(5500);
+
+    }
+
+
 
 
 
