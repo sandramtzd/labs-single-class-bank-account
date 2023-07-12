@@ -100,7 +100,23 @@ public class BankAccountTest {
         assertThat(bankAccount.getBalance()).isEqualTo(4975);
     }
 
-    
+    @Test
+
+    public void canPayInterest(){
+
+    }
+
+    @Test
+
+    public void balanceCannotFall(){
+        bankAccount.overdraft(8000);
+        assertThat(bankAccount.withdrawal().isEqualTo(null);
+
+    }
+
+
+
+
 
 
 

@@ -70,6 +70,13 @@ public class BankAccount {
     }
 // Is it good practice to name the method and variable the same?
     public void withdrawal(int withdrawal) {
+        if (withdrawal > balance){
+            this.balance = balance;
+
+        }
         this.balance -= withdrawal;
+    }
+
+    public void overdraft(int overdraft) {
     }
 }
