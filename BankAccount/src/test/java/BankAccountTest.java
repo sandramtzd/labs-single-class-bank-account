@@ -47,10 +47,18 @@ public class BankAccountTest {
         assertThat(bankAccount.getLastName()).isEqualTo("Martinez");
     }
 
+    @Test
+    public void canGetDateOfBirth(){
+        String result = bankAccount.getDateOfBirth();
+        String expected = "1995-07-09";
+        assertThat(result).isEqualTo(expected);
+    }
 
-
-
-
+    @Test
+    public void canSetDateOfBirth(){
+        bankAccount.setDateOfBirth("1995-07-09");
+        assertThat(bankAccount.getDateOfBirth()).isEqualTo("1995-07-09");
+    }
 
 
 

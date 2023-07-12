@@ -38,4 +38,12 @@ public class BankAccount {
     public void setLastName(String lastname) {
         this.lastName = lastname;
     }
+
+    public String getDateOfBirth() {
+        return this.dateOfBirth;
+    }
+
+    public void setDateOfBirth(String dateofbirth) {
+        this.dateOfBirth = dateofbirth;
+    }
 }
