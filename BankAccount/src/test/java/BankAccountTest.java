@@ -93,6 +93,17 @@ public class BankAccountTest {
 
     }
 
+    @Test
+
+    public void canWithdrawBalance(){
+        bankAccount.withdrawal(25);
+        assertThat(bankAccount.getBalance()).isEqualTo(4975);
+    }
+
+    
+
+
+
 
 
 

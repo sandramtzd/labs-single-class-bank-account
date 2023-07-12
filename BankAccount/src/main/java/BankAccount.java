@@ -64,10 +64,12 @@ public class BankAccount {
         this.balance = newBalance;
     }
 
-    public void deposit(int newDeposit) {
-        this.balance += newDeposit;
+    public void deposit(int deposit) {
+        this.balance += deposit;
 
     }
-
-    
+// Is it good practice to name the method and variable the same?
+    public void withdrawal(int withdrawal) {
+        this.balance -= withdrawal;
+    }
 }
